@@ -28,3 +28,17 @@ except:
 
 # Create a tweet
 api.update_status("Hello Twitter! I am just another bot on Twitter. \n #my_first_tweet")
+
+# Fetch any user by username
+user = api.get_user("OM_8007")
+print("User details:")
+print(user.name)
+print(user.description)
+print(user.location)
+
+print("Last 20 Followers:")
+for follower in user.followers():
+    print(follower.name)
+
+# Follow
+api.create_friendship("OM_8007")
