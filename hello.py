@@ -42,3 +42,7 @@ for follower in user.followers():
 
 # Follow
 api.create_friendship("OM_8007")
+
+# Search
+for tweet in api.search(q="Flutter", lang="en", rpp=5):
+    print(f"{tweet.user.name}>> {tweet.text}")
