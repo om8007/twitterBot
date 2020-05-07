@@ -4,7 +4,7 @@ Created on Wed 6 May 2020
 
 @author: om8007
 """
-#explorer
+
 import tweepy
 import logging
 import time
